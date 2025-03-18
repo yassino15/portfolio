@@ -1,0 +1,27 @@
+html[dir="rtl"] {
+    .sidebar {
+        right: 0;
+        left: auto;
+
+        .navigation ul li a {
+            border-left: none;
+            border-right: 3px solid transparent;
+
+            &:hover {
+                border-left-color: transparent;
+                border-right-color: var(--accent-color);
+            }
+        }
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-right: 280px;
+
+        .section-title:after {
+            left: auto;
+            right: 0;
+        }
+    }
+    
+}

@@ -1,0 +1,16 @@
+// src/assets/scss/main.scss
+@use "variables";
+@use "rtl";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #f0f3f6;
+}
