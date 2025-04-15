@@ -1,4 +1,3 @@
-<!-- src/App.vue -->
 <template>
   <div id="app" :class="{ 'dark-theme': isDarkTheme }">
     <router-view />
@@ -7,14 +6,15 @@
 
 <script setup>
 import { ref } from 'vue';
-
-// Theme toggle functionality (could be enhanced with localStorage for persistence)
 const isDarkTheme = ref(true);
 
 // You could add a function to toggle theme
 function toggleTheme() {
   isDarkTheme.value = !isDarkTheme.value;
 }
+
+// Provide the theme state to all components
+// provide('isDarkTheme', isDarkTheme);
 
 // Expose the toggleTheme function if you want to use it from a component
 defineExpose({ toggleTheme });
@@ -26,6 +26,7 @@ defineExpose({ toggleTheme });
 
 #app {
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark-theme {

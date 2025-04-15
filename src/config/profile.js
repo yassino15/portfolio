@@ -3,12 +3,16 @@ import profileImage from "@/assets/images/profile.jpeg";
 import dawha from "@/assets/images/dawha.jpeg";
 import AIU from "@/assets/images/AIU.jpg";
 import bba from "@/assets/images/baa.png";
+import sharfto from "@/assets/images/logo.png";
+import haf from "@/assets/images/haf.png";
+import mut from "@/assets/images/mut.png";
+import cm from "@/assets/images/cm.png";
 export default {
   // Basic info
   name: "Yassin Tomeh",
   title: "Frontend Developer",
   image: profileImage,
-  bio: "Front-End Web Developer, My toolkit includes proficiency in Vue.js and Nuxt.js frameworks, pinia for stat managements, axios for handling API's, sass and bootstrap, and gitlab.",
+  bio: "Front-End Web Developer, My toolkit includes proficiency in Vue.js and Nuxt.js frameworks, pinia for state management, axios for handling API's, sass and bootstrap, and GitLab.",
   languages: [
     {
       name: "Arabic",
@@ -155,12 +159,34 @@ export default {
   // Portfolio projects
   portfolio: [
     {
-      title: "E-commerce Website",
-      description:
-        "A fully responsive e-commerce platform built with Vue.js and Node.js.",
-      // image: require("@/assets/images/projects/project1.jpg"),
-      link: "https://project-url.com",
-      technologies: ["Vue.js", "Node.js", "MongoDB"],
+      title: "sharfto Dashboard",
+      image: sharfto,
+      link: "https://company.sh.sy",
+    },
+    {
+      title: "Mutakamela library",
+      image: mut,
+      link: "https://web.mutakamela.org",
+    },
+    {
+      title: "Connect Media",
+      image: cm,
+      link: "https://drive.google.com/file/d/1SyA9GVLBx8fyR-N1itQKwWBufNDoLC6x/view?usp=sharing",
+    },
+    {
+      title: "HAFILTIE dashboard",
+      image: haf,
+      link: "https://drive.google.com/file/d/1o80SOViHmZ6nCFl2Yw64rTmBv7PlUDmb/view",
+    },
+    {
+      title: "Sharfto sub domain",
+      image: sharfto,
+      link: "https://junina.sh.sy/",
+    },
+    {
+      title: "Sharfto E-commerce",
+      image: sharfto,
+      link: "https://sh.sy/",
     },
   ],
 

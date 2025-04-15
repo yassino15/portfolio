@@ -36,30 +36,48 @@ const { t } = useI18n();
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+
 
   .intro-content {
-    max-width: 85%;
-
+    // max-width: 85%;
+    max-width: 800px;
+    text-align: center;
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: .3rem;
+
+      .text-primary {
+        color: var(--accent-color);
+      }
     }
 
     .inline-list {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+
       .list-item {
-        display: inline-block;
-        font-size: 19px;
-        position: relative;
+        display: inline-flex;
+        align-items: center;
+        font-size: 1rem;
+        margin-right: 1rem;
         color: var(--accent-color);
 
+
         i {
-          margin-right: 8px;
+          margin-right: 0.5rem;
+          color: var(--accent-color);
         }
       }
 
       .dot {
-        margin-inline: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        // margin-inline: 20px;
       }
     }
 
@@ -73,7 +91,7 @@ const { t } = useI18n();
       font-size: 1.1rem;
       line-height: 1.6;
       margin-bottom: 2rem;
-      margin-top: 30px;
+      margin-top: 25px;
     }
   }
 
@@ -97,31 +115,56 @@ const { t } = useI18n();
 
   .cta-buttons {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 
     .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
       font-weight: 600;
+      font-size: 1rem;
       text-decoration: none;
-      transition: all 0.3s;
+      transition: background-color 0.3s ease, color 0.3s ease;
 
       &.primary {
-        background-color: var(--accent-color);
-        color: white;
+        background: linear-gradient(to right, #1488cc, #2b32b2);
+        color: #fff;
 
         &:hover {
-          background-color: color.adjust(#1488cc, $lightness: -10%);
+          background: linear-gradient(to right, #0f5c9b, #1c2478);
         }
       }
 
       &.secondary {
         border: 2px solid var(--accent-color);
         color: var(--accent-color);
+        background-color: transparent;
 
         &:hover {
           background-color: rgba(66, 98, 184, 0.1);
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 0;
+    min-height: 88svh;
+    margin-top: 3rem;
+
+    .intro-content {
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    .cta-buttons {
+      .btn {
+        padding: .6rem 1rem;
+        margin-bottom: 12px;
       }
     }
   }

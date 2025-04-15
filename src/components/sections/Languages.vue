@@ -8,7 +8,7 @@
             </div>
 
             <div class="languages-container">
-                <div v-for="language in profile.languages" :key="language.name" class="language-card">
+                <div v-for="language in languages" :key="language.name" class="language-card">
                     <div class="language-header">
                         <div class="language-icon">
                             <i :class="language.icon"></i>
@@ -30,33 +30,13 @@
 
 <script setup>
 import { computed } from 'vue';
-import profile from '@/config/profile.js';
+import { useI18n } from "vue-i18n";
 
-// If languages are not structured in profile.js, we can transform them here
-const languagesList = computed(() => {
-    // Check if profile.languages is already in the right format
-    if (profile.languages && profile.languages[0] && typeof profile.languages[0] === 'object') {
-        return profile.languages;
-    }
+const { locale, messages } = useI18n();
 
-    // Otherwise, transform the simple array into objects with more details
-    return [
-        {
-            name: "Arabic",
-            level: "Native",
-            proficiency: 100,
-            icon: "fas fa-language",
-            description: "Native language with excellent reading, writing, and speaking skills."
-        },
-        {
-            name: "English",
-            level: "Fluent",
-            proficiency: 90,
-            icon: "fas fa-language",
-            description: "Professional working proficiency in reading, writing, and speaking."
-        }
-    ];
-});
+// Access the array directly
+const languages = computed(() => messages.value[locale.value].languages.items);
+
 </script>
 
 <style lang="scss" scoped>
@@ -109,8 +89,8 @@ const languagesList = computed(() => {
         }
 
         &:nth-child(2) {
-            --start-color: #f56565;
-            --end-color: #ed8936;
+            --start-color: #4299e1;
+            --end-color: #48bb78;
         }
 
         .language-header {

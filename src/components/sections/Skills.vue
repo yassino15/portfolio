@@ -3,7 +3,6 @@
     <div class="container">
       <div class="section-header">
         <p class="section-description">
-          {{ $t('skills.description', 'hello') }}
           {{ $t('skills.description') }}
 
         </p>

@@ -7,7 +7,7 @@ export default {
   sidebar: {
     name: "Yassin Tomeh",
     title: "Frontend Developer",
-    bio: "Front-End Web Developer, My toolkit includes proficiency in Vue.js and Nuxt.js frameworks, pinia for stat managements, axios for handling API's, sass and bootstrap, and gitlab.",
+    bio: "Passionate Vue.js & Nuxt.js developer crafting responsive, high-performance web apps.",
     sections: {
       intro: "About Me",
       education: "Education",
@@ -20,8 +20,8 @@ export default {
     },
   },
   intro: {
-    greeting: "Welcome to my",
-    greetingg: "Resume!",
+    greeting: "Hi, my name is",
+    greetingg: "Yassin Tomeh",
     bio: "I'm a passionate frontend developer specializing in Vue.js and modern JavaScript frameworks. With a strong focus on creating responsive, user-friendly interfaces, I strive to build applications that are both functional and aesthetically pleasing.",
     contactMe: "Contact Me",
     viewWork: "View My Work",
@@ -73,11 +73,24 @@ export default {
   languages: {
     title: "Languages",
     description: "Languages I speak fluently and use in my professional work.",
-    native: "Native",
-    fluent: "Fluent",
-    professional: "Professional",
-    intermediate: "Intermediate",
-    basic: "Basic",
+    items: [
+      {
+        name: "Arabic",
+        level: "Native",
+        proficiency: 100,
+        icon: "fas fa-language",
+        description:
+          "Native language with excellent reading, writing, and speaking skills.",
+      },
+      {
+        name: "English",
+        level: "Fluent",
+        proficiency: 90,
+        icon: "fas fa-language",
+        description:
+          "Professional working proficiency in reading, writing, and speaking.",
+      },
+    ],
   },
   experience: {
     title: "Experience",
@@ -103,8 +116,9 @@ export default {
   },
   portfolio: {
     title: "Portfolio",
-    viewProject: "View Project",
-    technologies: "Technologies",
+    viewProject: "view Project",
+    description:
+      "A collection of my recent projects, showcasing my skills in creating responsive and dynamic web applications.",
   },
   achievements: {
     title: "Achievements",
@@ -112,12 +126,20 @@ export default {
   },
   contact: {
     title: "Contact",
+    description:
+      "Have a question or want to work together? I'd love to hear from you!",
     name: "Name",
     email: "Email",
+    subject: "Subject",
     message: "Message",
     send: "Send Message",
-    getInTouch: "Get In Touch",
-    location: "Location",
-    phone: "Phone",
+    sending: "Sending...",
+    yourName: "Your Name",
+    yourEmail: "Your Email",
+    yourSubject: "Subject",
+    yourMessage: "Your Message",
+    success: "Your message has been sent successfully!",
+    error:
+      "An error occurred while sending your message. Please try again later.",
   },
 };
