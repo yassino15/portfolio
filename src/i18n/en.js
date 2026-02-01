@@ -7,7 +7,7 @@ export default {
   sidebar: {
     name: "Yassin Tomeh",
     title: "Frontend Developer",
-    bio: "Passionate Vue.js & Nuxt.js developer crafting responsive, high-performance web apps.",
+    bio: "Passionate Front-End developer crafting responsive, high-performance web apps.",
     sections: {
       intro: "About Me",
       education: "Education",
