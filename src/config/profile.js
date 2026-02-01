@@ -4,6 +4,9 @@ import dawha from "@/assets/images/dawha.jpeg";
 import AIU from "@/assets/images/AIU.jpg";
 import bba from "@/assets/images/baa.png";
 import sharfto from "@/assets/images/logo.png";
+import munasbati from "@/assets/images/logo.svg";
+import cadeau from "@/assets/images/cadeau.png";
+import wattarderma from "@/assets/images/wattar.png";
 import haf from "@/assets/images/haf.png";
 import mut from "@/assets/images/mut.png";
 import cm from "@/assets/images/cm.png";
@@ -130,6 +133,21 @@ export default {
 
   // Portfolio projects
   portfolio: [
+    {
+      title: "munasbati Dashboard",
+      image: munasbati,
+      link: "https://dashboard.munasbati.sy/",
+    },
+    {
+      title: "wattar derma(soon)",
+      image: wattarderma,
+      link: "http://www.wattarderma.com/",
+    },
+    {
+      title: "cadeau Dashboard",
+      image: cadeau,
+      link: "https://drive.google.com/file/d/1kOr2UUTBAX6hWt6JbOg7jodvEfi9hxVQ/view?usp=sharing",
+    },
     {
       title: "sharfto Dashboard",
       image: sharfto,
