@@ -94,54 +94,26 @@ export default {
   // tools: ["Git", "Webpack", "Docker", "Figma"],
   // languages: ["English (Fluent)", "Arabic (Native)"],
   skills: [
-    {
-      name: "HTML",
-      icon: "fab fa-html5",
-    },
-    {
-      name: "CSS",
-      icon: "fab fa-css3-alt",
-    },
-    {
-      name: "JavaScript",
-      icon: "fab fa-js",
-    },
-    {
-      name: "Vue.js",
-      icon: "fab fa-vuejs",
-    },
-    {
-      name: "Vuex",
-      icon: "fab fa-vuejs",
-    },
-    {
-      name: "Pinia",
-      icon: "fab fa-vuejs",
-    },
-    {
-      name: "Nuxt.js",
-      icon: "fab fa-vuejs",
-    },
-    {
-      name: "React.js",
-      icon: "fab fa-react",
-    },
-    {
-      name: "Bootstrap",
-      icon: "fab fa-bootstrap",
-    },
-    {
-      name: "Git",
-      icon: "fab fa-git-alt",
-    },
-    {
-      name: "Vuetify",
-      icon: "fab fa-vuejs",
-    },
-    {
-      name: "Teamwork",
-      icon: "fas fa-users",
-    },
+    { name: "HTML", icon: "simple-icons:html5", color: "#e34f26" },
+    { name: "CSS", icon: "simple-icons:css3", color: "#1572b6" },
+    { name: "JavaScript", icon: "simple-icons:javascript", color: "#f7df1e" },
+
+    { name: "Vue.js", icon: "simple-icons:vuedotjs", color: "#42b883" },
+    { name: "Vuex", icon: "simple-icons:vuedotjs", color: "#a071ff" },
+    { name: "Pinia", icon: "simple-icons:pinia", color: "#ffd859" },
+    { name: "Nuxt.js", icon: "simple-icons:nuxtdotjs", color: "#00dc82" },
+    { name: "Vuetify", icon: "simple-icons:vuetify", color: "#1867c0" },
+
+    { name: "React.js", icon: "simple-icons:react", color: "#00d8ff" },
+    { name: "Next.js", icon: "simple-icons:nextdotjs", color: "#000000" },
+
+    { name: "TypeScript", icon: "simple-icons:typescript", color: "#3178c6" },
+    { name: "Tailwind", icon: "simple-icons:tailwindcss", color: "#38b2ac" },
+
+    { name: "Bootstrap", icon: "simple-icons:bootstrap", color: "#7952b3" },
+    { name: "Git", icon: "simple-icons:git", color: "#f05032" },
+
+    { name: "Team work", icon: "mdi:account-group", color: "#d5c022" },
   ],
 
   // Experience

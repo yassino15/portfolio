@@ -8,9 +8,10 @@
         </p>
       </div>
       <div class="skills-container">
-        <div v-for="skill in profile.skills" :key="skill.name" class="skill-item-container" :data-skill="skill.name">
+        <div v-for="skill in profile.skills" :key="skill.name" class="skill-item-container"
+          :style="{ '--hover-color': skill.color }">
           <div class="skill-item">
-            <i :class="skill.icon"></i>
+            <Icon :icon="skill.icon" class="skill-icon" />
             <span class="skill-name">{{ skill.name }}</span>
           </div>
         </div>
@@ -21,6 +22,8 @@
 
 <script setup>
 import profile from '@/config/profile.js';
+import { Icon } from '@iconify/vue'
+
 </script>
 
 <style lang="scss" scoped>
@@ -146,7 +149,7 @@ import profile from '@/config/profile.js';
       --hover-color: #1867c0;
     }
 
-    &[data-skill="Teamwork"] {
+    &[data-skill="Team work"] {
       --hover-color: #d5c022;
     }
 
@@ -164,22 +167,6 @@ import profile from '@/config/profile.js';
 
     &[data-skill="Tailwind"] {
       --hover-color: #38b2ac;
-    }
-
-    &[data-skill="Tailwind CSS"] {
-      --hover-color: #38b2ac;
-    }
-
-    &[data-skill="Node.js"] {
-      --hover-color: #68a063;
-    }
-
-    &[data-skill="Express"] {
-      --hover-color: #353535;
-    }
-
-    &[data-skill="MongoDB"] {
-      --hover-color: #47a248;
     }
   }
 
@@ -269,7 +256,26 @@ import profile from '@/config/profile.js';
 }
 
 // Apply the float animation to skill items on hover
-.skill-item-container:hover .skill-item {
-  animation: float 2s ease-in-out infinite;
+
+.skill-item-container {
+  --hover-color: #999;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icon {
+  width: 38px;
+  height: 38px;
+  // color: #9aa0a6;
+  // transition: transform .25s ease, filter .25s ease, color .25s ease;
+}
+
+.skill-item-container:hover .skill-icon {
+  color: var(--hover-color);
+  transform: translateY(-2px) scale(1.06);
 }
 </style>
